@@ -1,4 +1,4 @@
-@startuml
+@startuml states_diagram
 !theme plain
 scale 1.2
 title Диаграмма состояний системы
