@@ -9,3 +9,5 @@ htmlcov/
 __pycache__/
 
 docs/
+
+system_state.json
