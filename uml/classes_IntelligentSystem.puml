@@ -1,0 +1,129 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Sensor {
+    +sensor_id: str
+    +sensor_type: str
+    +is_active: bool
+    +collect_data() -> Dict[str, Any]
+    +to_dict() -> Dict[str, Any]
+    +from_dict(data: Dict[str, Any]) -> Sensor
+}
+
+class MLAlgorithm {
+    +algorithm_id: str
+    +algorithm_type: str
+    +is_trained: bool
+    +train(data: DataSet)
+    +predict(input_data: Dict) -> Dict
+    +to_dict() -> Dict[str, Any]
+    +from_dict(data: Dict[str, Any])
+}
+
+class DecisionEngine {
+    +make_decision(prediction: Dict, context: Dict = None) -> Dict
+}
+
+class Feedback {
+    +feedback_id: str
+    +user_id: str
+    +rating: float
+    +comment: str
+    +timestamp: datetime
+    +context: Dict[str, Any]
+}
+
+class FeedbackCollector {
+    +feedbacks: List[Feedback]
+    +create_feedback(rating: float, user_id: str, comment: str, context: Dict = None) -> Feedback
+    +get_average_rating() -> float
+    +to_dict() -> Dict[str, Any]
+    +from_dict(data: Dict[str, Any]) -> FeedbackCollector
+}
+
+class DataPoint {
+    +point_id: str
+    +timestamp: datetime
+    +values: Dict[str, Any]
+    +metadata: Dict[str, Any]
+    +to_dict() -> Dict[str, Any]
+    +from_dict(data: Dict[str, Any]) -> DataPoint
+}
+
+class DataSet {
+    +name: str
+    +data_points: List[DataPoint]
+    +add_data_point(data_point: DataPoint)
+    +get_latest_data(count: int = 1) -> List[DataPoint]
+    +size() -> int
+    +to_dict() -> Dict[str, Any]
+    +from_dict(data: Dict[str, Any]) -> DataSet
+}
+
+class SystemState {
+    +state_id: str
+    +version: int
+    +config: Dict[str, Any]
+    +data: Dict[str, Any]
+    +save(filepath: str = None)
+    +load(filepath: str = None) -> bool
+    +set_data(key: str, value: Any)
+    +get_data(key: str, default: Any = None) -> Any
+}
+
+class IntelligentSystem {
+    +name: str
+    +sensors: List[Sensor]
+    +algorithm: MLAlgorithm
+    +decision_engine: DecisionEngine
+    +state: SystemState
+    +dataset: DataSet
+    +feedback_collector: FeedbackCollector
+    +primary_sensor_type: str
+
+    +load_and_initialize(algorithm: MLAlgorithm) -> bool
+    +load_state(filepath: str = None, algorithm: MLAlgorithm = None) -> bool
+    +collect_environment_data() -> Dict[str, Any]
+    +train_system() -> str
+    +adapt_to_environment() -> str
+    +make_decision() -> Dict
+    +update_algorithms(rating: float, comment: str = "") -> str
+    +save_state() -> None
+    +to_dict() -> Dict[str, Any]
+    +get_status_report() -> str
+}
+
+class IntelligentSystemException
+class SensorException extends IntelligentSystemException
+class AlgorithmException extends IntelligentSystemException
+class StateException extends IntelligentSystemException
+class DataException extends IntelligentSystemException
+class FeedbackException extends IntelligentSystemException
+
+class IntelligentSystemCLI {
+    +system: IntelligentSystem
+    +start()
+    +_main_loop()
+    +_cmd_collect()
+    +_cmd_train()
+    +_cmd_adapt()
+    +_cmd_decide()
+    +_cmd_feedback()
+    +_cmd_save()
+    +_cmd_status()
+}
+
+' Композиция
+IntelligentSystem *-- Sensor
+IntelligentSystem *-- MLAlgorithm
+IntelligentSystem *-- DataSet
+IntelligentSystem *-- FeedbackCollector
+IntelligentSystem *-- SystemState
+IntelligentSystem *-- DecisionEngine
+DataSet *-- DataPoint
+FeedbackCollector *-- Feedback
+IntelligentSystemCLI --> IntelligentSystem
+DecisionEngine ..> MLAlgorithm
+MLAlgorithm ..> DataSet
+
+@enduml

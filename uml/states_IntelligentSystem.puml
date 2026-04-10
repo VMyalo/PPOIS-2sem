@@ -1,0 +1,82 @@
+@startuml states_diagram
+!theme plain
+scale 1.2
+title Диаграмма состояний системы
+
+skinparam state {
+    BackgroundColor White
+    BorderColor Black
+}
+
+[*] --> MainMenu
+
+state MainMenu {
+    [*] --> Waiting
+    Waiting --> CollectData : 1 / Сбор данных
+    Waiting --> TrainModel : 2 / Обучение
+    Waiting --> AdaptModel : 3 / Адаптация
+    Waiting --> MakeDecision : 4 / Решение
+    Waiting --> SaveFeedback : 5 / Отзыв
+    Waiting --> SaveState : 6 / Сохранение
+    Waiting --> ShowStatus : 7 / Статус
+    Waiting --> [*] : Выход
+
+    CollectData --> Waiting
+    TrainModel --> Waiting
+    AdaptModel --> Waiting
+    MakeDecision --> Waiting
+    SaveFeedback --> Waiting
+    SaveState --> Waiting
+    ShowStatus --> Waiting
+}
+
+state CollectData {
+    [*] --> ReadActiveSensors
+    ReadActiveSensors --> AppendToDataSet
+    AppendToDataSet --> [*]
+}
+
+state TrainModel {
+    [*] --> CheckDataSet
+    CheckDataSet --> FilterByPrimarySensor
+    FilterByPrimarySensor --> TrainAlgorithm
+    TrainAlgorithm --> SaveAlgorithmState
+    SaveAlgorithmState --> [*]
+}
+
+state AdaptModel {
+    [*] --> FilterRecentData
+    FilterRecentData --> TrainOnLatestSubset
+    TrainOnLatestSubset --> SaveAlgorithmState
+    SaveAlgorithmState --> [*]
+}
+
+state MakeDecision {
+    [*] --> CollectEnvironmentData
+    CollectEnvironmentData --> NormalizeFeatures
+    NormalizeFeatures --> Predict
+    Predict --> DecisionByLabel
+    DecisionByLabel --> [*]
+}
+
+state SaveFeedback {
+    [*] --> ValidateRating
+    ValidateRating --> StoreFeedback
+    StoreFeedback --> [*]
+}
+
+state SaveState {
+    [*] --> PrepareSystemSnapshot
+    PrepareSystemSnapshot --> PersistJson
+    PersistJson --> [*]
+}
+
+state Startup {
+    [*] --> CreateAlgorithm
+    CreateAlgorithm --> TryLoadState
+    TryLoadState --> EnsureDefaultSensors
+    EnsureDefaultSensors --> ShowInitialStatus
+    ShowInitialStatus --> [*]
+}
+
+@enduml

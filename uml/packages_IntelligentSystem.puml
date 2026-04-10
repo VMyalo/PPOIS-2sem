@@ -1,0 +1,33 @@
+@startuml
+skinparam packageStyle rectangle
+
+package "src" {
+    package "interface" {
+        [cli.py]
+    }
+
+    package "core" {
+        [system.py]
+        [algorithms.py]
+        [sensors.py]
+        [data.py]
+        [feedback.py]
+        [decisions.py]
+        [state.py]
+    }
+
+    package "utils" {
+        [serializers.py]
+        [validators.py]
+    }
+
+    package "exceptions" {
+        [exceptions.py]
+    }
+}
+
+interface --> core
+core --> utils
+core --> exceptions
+
+@enduml
