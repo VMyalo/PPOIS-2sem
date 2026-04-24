@@ -123,7 +123,9 @@ class Sensor:
         # Подклассы (TemperatureSensor/HumiditySensor/LightSensor) принимают только sensor_id,
         # базовый Sensor — sensor_type и sensor_id.
         try:
-            sensor = cls(sensor_type=data["sensor_type"], sensor_id=data.get("sensor_id"))
+            sensor = cls(
+                sensor_type=data["sensor_type"], sensor_id=data.get("sensor_id")
+            )
         except TypeError:
             sensor = cls(sensor_id=data.get("sensor_id"))
         sensor.is_active = data.get("is_active", True)

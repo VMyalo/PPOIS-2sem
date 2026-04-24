@@ -4,15 +4,15 @@
 и управляет жизненным циклом.
 """
 
-from typing import List, Dict, Any, Optional
+from typing import Any, Dict, List, Optional
 
-from .sensors import Sensor
-from .data import DataSet
-from .algorithms import MLAlgorithm
-from .decisions import DecisionEngine
-from .state import SystemState
-from .feedback import FeedbackCollector
 from ..exceptions import SensorException
+from .algorithms import MLAlgorithm
+from .data import DataSet
+from .decisions import DecisionEngine
+from .feedback import FeedbackCollector
+from .sensors import Sensor
+from .state import SystemState
 
 
 class IntelligentSystem:
@@ -89,7 +89,9 @@ class IntelligentSystem:
         try:
             sensors_data = data.get("sensors", [])
             if isinstance(sensors_data, list):
-                self.sensors = [Sensor.from_dict(s) for s in sensors_data if isinstance(s, dict)]
+                self.sensors = [
+                    Sensor.from_dict(s) for s in sensors_data if isinstance(s, dict)
+                ]
         except Exception:
             # Не мешаем загрузке, если сенсоры повреждены
             pass
@@ -122,14 +124,17 @@ class IntelligentSystem:
             if sensor.is_active:
                 try:
                     data = sensor.collect_data()
-                    collected_data[sensor.sensor_type] = data['value']
+                    collected_data[sensor.sensor_type] = data["value"]
 
                     from .data import DataPoint
-                    dp = DataPoint(values={
-                        'sensor_id': sensor.sensor_id,
-                        'sensor_type': sensor.sensor_type,
-                        'value': data['value']
-                    })
+
+                    dp = DataPoint(
+                        values={
+                            "sensor_id": sensor.sensor_id,
+                            "sensor_type": sensor.sensor_type,
+                            "value": data["value"],
+                        }
+                    )
                     self.dataset.add_data_point(dp)
                 except SensorException:
                     continue
@@ -143,7 +148,7 @@ class IntelligentSystem:
         try:
             self.algorithm.train(self._get_training_dataset())
             # Сразу сохраняем состояние алгоритма в объект State
-            self.state.set_data('algorithm_state', self.algorithm.to_dict())
+            self.state.set_data("algorithm_state", self.algorithm.to_dict())
             return "Система успешно обучена."
         except Exception as e:
             return f"Ошибка обучения: {str(e)}"
@@ -159,12 +164,13 @@ class IntelligentSystem:
                 return "Недостаточно свежих данных для адаптации."
 
             from .data import DataSet
+
             adapt_dataset = DataSet("adapt_temp")
             for dp in latest_data:
                 adapt_dataset.add_data_point(dp)
 
             self.algorithm.train(adapt_dataset)
-            self.state.set_data('algorithm_state', self.algorithm.to_dict())
+            self.state.set_data("algorithm_state", self.algorithm.to_dict())
             return "Система адаптировалась к изменениям среды."
         except Exception as e:
             return f"Ошибка адаптации: {str(e)}"
@@ -197,7 +203,7 @@ class IntelligentSystem:
             )
             return decision
         except Exception as e:
-            return {'action': 'error', 'reason': str(e)}
+            return {"action": "error", "reason": str(e)}
 
     def update_algorithms(self, rating: float, comment: str = "") -> str:
         """Обновляет алгоритмы на основе обратной связи."""
@@ -211,7 +217,7 @@ class IntelligentSystem:
         """Сохраняет текущее состояние системы на диск."""
         # Обновляем данные алгоритма перед сохранением
         if self.algorithm:
-            self.state.set_data('algorithm_state', self.algorithm.to_dict())
+            self.state.set_data("algorithm_state", self.algorithm.to_dict())
         # Сохраняем расширенное состояние системы
         self.state.set_data("system_state", self.to_dict())
         self.state.save()
@@ -235,7 +241,9 @@ class IntelligentSystem:
 
         report.append(f"Данных в наборе: {self.dataset.size()}")
         report.append(f"Основной сенсор: {self.primary_sensor_type}")
-        report.append(f"Активных сенсоров: {len([s for s in self.sensors if s.is_active])}")
+        report.append(
+            f"Активных сенсоров: {len([s for s in self.sensors if s.is_active])}"
+        )
         report.append(f"Отзывов получено: {len(self.feedback_collector.feedbacks)}")
         report.append("==================================")
 

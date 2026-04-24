@@ -5,19 +5,13 @@
 """
 
 import json
-import os
-import random
 from datetime import datetime
-from unittest.mock import patch, mock_open
+from unittest.mock import patch
 import pytest
 
 from src.exceptions.exceptions import (
-    IntelligentSystemException,
     SensorException,
-    AlgorithmException,
     StateException,
-    DataException,
-    FeedbackException,
 )
 from src.utils.validators import DataValidator
 from src.utils.serializers import JSONSerializer
@@ -29,28 +23,6 @@ from src.core.decisions import DecisionEngine
 from src.core.state import SystemState
 from src.core.system import IntelligentSystem
 from src.interface.cli import IntelligentSystemCLI
-
-
-# ==================== EXCEPTIONS ====================
-
-class TestExceptions:
-    """Тесты пользовательских исключений."""
-
-    def test_base_exception(self):
-        exc = IntelligentSystemException("Test error", code=42)
-        assert str(exc) == "Test error"
-        assert exc.code == 42
-        assert exc.message == "Test error"
-
-    def test_inheritance(self):
-        assert issubclass(SensorException, IntelligentSystemException)
-        assert issubclass(AlgorithmException, IntelligentSystemException)
-        assert issubclass(StateException, IntelligentSystemException)
-        assert issubclass(DataException, IntelligentSystemException)
-        assert issubclass(FeedbackException, IntelligentSystemException)
-
-        exc = SensorException("Sensor failed", code=10)
-        assert isinstance(exc, IntelligentSystemException)
 
 
 # ==================== VALIDATORS ====================

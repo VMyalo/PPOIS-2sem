@@ -1,9 +1,10 @@
 """Модуль интерфейса командной строки (CLI)."""
 
 import sys
-from ..core.system import IntelligentSystem
-from ..core.sensors import TemperatureSensor, HumiditySensor, LightSensor
+
 from ..core.algorithms import SimpleThresholdAlgorithm
+from ..core.sensors import HumiditySensor, LightSensor, TemperatureSensor
+from ..core.system import IntelligentSystem
 
 
 class IntelligentSystemCLI:
@@ -31,7 +32,9 @@ class IntelligentSystemCLI:
         # Сенсоры теперь могут быть восстановлены из состояния. Если сенсоров нет (или не хватает),
         # подключаем дефолтные, но не дублируем уже существующие.
         self._ensure_default_sensors()
-        active = [s.sensor_type for s in self.system.sensors if getattr(s, "is_active", False)]
+        active = [
+            s.sensor_type for s in self.system.sensors if getattr(s, "is_active", False)
+        ]
         if active:
             print("[INFO] Активные сенсоры: " + ", ".join(active))
         else:
@@ -44,7 +47,9 @@ class IntelligentSystemCLI:
 
     def _ensure_default_sensors(self) -> None:
         """Добавляет стандартные сенсоры, если их нет (или они не все подключены)."""
-        existing_types = {s.sensor_type for s in self.system.sensors if hasattr(s, "sensor_type")}
+        existing_types = {
+            s.sensor_type for s in self.system.sensors if hasattr(s, "sensor_type")
+        }
 
         if "temperature" not in existing_types:
             self.system.add_sensor(TemperatureSensor())
@@ -59,21 +64,21 @@ class IntelligentSystemCLI:
             self._print_menu()
             choice = input("\nВыберите действие: ").strip()
 
-            if choice == '1':
+            if choice == "1":
                 self._cmd_collect()
-            elif choice == '2':
+            elif choice == "2":
                 self._cmd_train()
-            elif choice == '3':
+            elif choice == "3":
                 self._cmd_adapt()
-            elif choice == '4':
+            elif choice == "4":
                 self._cmd_decide()
-            elif choice == '5':
+            elif choice == "5":
                 self._cmd_feedback()
-            elif choice == '6':
+            elif choice == "6":
                 self._cmd_save()
-            elif choice == '7':
+            elif choice == "7":
                 self._cmd_status()
-            elif choice == '0':
+            elif choice == "0":
                 print("Выход из системы. Сохранение...")
                 self.system.save_state()
                 print("Состояние сохранено. До свидания!")
