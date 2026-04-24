@@ -128,6 +128,14 @@ class IntelligentSystemCLI:
         decision = self.system.make_decision()
         print(f"Действие: {decision['action']}")
         print(f"Причина: {decision['reason']}")
+        prediction = decision.get("prediction", {})
+        if isinstance(prediction, dict):
+            if "value" in prediction:
+                print(f"Текущее значение: {prediction['value']}")
+            if "threshold" in prediction:
+                print(f"Порог: {prediction['threshold']}")
+            if "label" in prediction:
+                print(f"Метка: {prediction['label']}")
 
     def _cmd_feedback(self) -> None:
         """Команда обратной связи."""
