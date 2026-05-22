@@ -9,7 +9,7 @@ from src.view.widgets.date_picker import DatePicker
 
 
 class CriteriaForm(QGroupBox):
-    """Форма ввода условий поиска/удаления (вариант 5)."""
+    """Форма ввода условий поиска/удаления."""
 
     def __init__(self, title: str, parent: QWidget | None = None) -> None:
         super().__init__(title, parent)

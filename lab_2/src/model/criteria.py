@@ -14,7 +14,7 @@ class SearchMode(Enum):
 
 @dataclass
 class SearchCriteria:
-    """Критерии поиска/удаления по варианту 5."""
+    """Критерии поиска/удаления."""
 
     mode: SearchMode
     surname: str = ""
