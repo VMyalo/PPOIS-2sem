@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<patients>
+  <patient>
+    <patient_fio>Новиков Ольга Дмитриевич</patient_fio>
+    <address>г. Витебск, пр-т Дзержинского, д. 16, кв. 127</address>
+    <birth_date>1997-05-14</birth_date>
+    <appointment_date>2025-02-16</appointment_date>
+    <doctor_fio>Ковалёв Пётр Анатольевич</doctor_fio>
+    <conclusion>Гипертония I ст., рекомендован контроль АД.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Медведев Александр Сергеевна</patient_fio>
+    <address>г. Минск, ул. Якуба Коласа, д. 78, кв. 196</address>
+    <birth_date>1994-12-16</birth_date>
+    <appointment_date>2024-06-29</appointment_date>
+    <doctor_fio>Гришин Андрей Владимирович</doctor_fio>
+    <conclusion>Аллергический ринит, антигистаминные препараты.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Козлов Никита Александрович</patient_fio>
+    <address>г. Минск, пр-т Независимости, д. 4, кв. 167</address>
+    <birth_date>1989-03-14</birth_date>
+    <appointment_date>2024-03-19</appointment_date>
+    <doctor_fio>Баранов Олег Станиславович</doctor_fio>
+    <conclusion>ОРВИ, назначено симптоматическое лечение.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Громов Иван Ивановна</patient_fio>
+    <address>г. Брест, ул. Бобруйская, д. 71, кв. 60</address>
+    <birth_date>1975-09-18</birth_date>
+    <appointment_date>2024-03-24</appointment_date>
+    <doctor_fio>Баранов Олег Станиславович</doctor_fio>
+    <conclusion>Остеохондроз, физиотерапия и ЛФК.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Иванов Анна Дмитриевич</patient_fio>
+    <address>г. Брест, ул. Сурганова, д. 81, кв. 186</address>
+    <birth_date>1965-11-05</birth_date>
+    <appointment_date>2024-11-12</appointment_date>
+    <doctor_fio>Гришин Андрей Владимирович</doctor_fio>
+    <conclusion>Варикозное расширение вен, компрессионный трикотаж.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Черный Елена Иванович</patient_fio>
+    <address>г. Витебск, пр-т Дзержинского, д. 37, кв. 151</address>
+    <birth_date>2000-05-01</birth_date>
+    <appointment_date>2025-03-16</appointment_date>
+    <doctor_fio>Федорова Нина Петровна</doctor_fio>
+    <conclusion>ОРВИ, назначено симптоматическое лечение.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Медведев Иван Сергеевна</patient_fio>
+    <address>г. Брест, ул. Якуба Коласа, д. 86, кв. 45</address>
+    <birth_date>2004-03-27</birth_date>
+    <appointment_date>2025-02-06</appointment_date>
+    <doctor_fio>Смирнова Елена Викторовна</doctor_fio>
+    <conclusion>Мигрень, профилактика и обезболивание.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Громов Дмитрий Сергеевич</patient_fio>
+    <address>г. Брест, ул. Козлова, д. 108, кв. 101</address>
+    <birth_date>1998-12-07</birth_date>
+    <appointment_date>2023-03-02</appointment_date>
+    <doctor_fio>Баранов Олег Станиславович</doctor_fio>
+    <conclusion>ОРВИ, назначено симптоматическое лечение.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Кузнецов Виктория Сергеевна</patient_fio>
+    <address>г. Гомель, ул. Сурганова, д. 22, кв. 129</address>
+    <birth_date>1956-02-08</birth_date>
+    <appointment_date>2024-02-13</appointment_date>
+    <doctor_fio>Федорова Нина Петровна</doctor_fio>
+    <conclusion>Варикозное расширение вен, компрессионный трикотаж.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Соколов Анна Дмитриевна</patient_fio>
+    <address>г. Минск, ул. Каховская, д. 59, кв. 69</address>
+    <birth_date>1989-06-03</birth_date>
+    <appointment_date>2025-11-15</appointment_date>
+    <doctor_fio>Ковалёв Пётр Анатольевич</doctor_fio>
+    <conclusion>Варикозное расширение вен, компрессионный трикотаж.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Крылов Иван Сергеевна</patient_fio>
+    <address>г. Гомель, пр-т Независимости, д. 62, кв. 94</address>
+    <birth_date>2000-04-12</birth_date>
+    <appointment_date>2025-04-26</appointment_date>
+    <doctor_fio>Баранов Олег Станиславович</doctor_fio>
+    <conclusion>Бронхит, ингаляции и отхаркивающие средства.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Черный Никита Александрович</patient_fio>
+    <address>г. Брест, ул. Козлова, д. 70, кв. 160</address>
+    <birth_date>1996-02-07</birth_date>
+    <appointment_date>2023-02-27</appointment_date>
+    <doctor_fio>Ковалёв Пётр Анатольевич</doctor_fio>
+    <conclusion>Гастрит, назначена диета и обследование.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Крылов Ольга Сергеевич</patient_fio>
+    <address>г. Брест, ул. Ленина, д. 103, кв. 142</address>
+    <birth_date>1957-11-29</birth_date>
+    <appointment_date>2023-05-25</appointment_date>
+    <doctor_fio>Смирнова Елена Викторовна</doctor_fio>
+    <conclusion>ОРВИ, назначено симптоматическое лечение.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Зайцев Александр Александровна</patient_fio>
+    <address>г. Гомель, ул. Притыцкого, д. 35, кв. 29</address>
+    <birth_date>1985-11-25</birth_date>
+    <appointment_date>2024-08-17</appointment_date>
+    <doctor_fio>Смирнова Елена Викторовна</doctor_fio>
+    <conclusion>Гастрит, назначена диета и обследование.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Морозов Артём Сергеевич</patient_fio>
+    <address>г. Брест, пр-т Дзержинского, д. 83, кв. 183</address>
+    <birth_date>1995-10-17</birth_date>
+    <appointment_date>2024-10-21</appointment_date>
+    <doctor_fio>Баранов Олег Станиславович</doctor_fio>
+    <conclusion>Мигрень, профилактика и обезболивание.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Козлов Александр Александровна</patient_fio>
+    <address>г. Гомель, ул. Якуба Коласа, д. 44, кв. 108</address>
+    <birth_date>1978-03-08</birth_date>
+    <appointment_date>2023-08-11</appointment_date>
+    <doctor_fio>Лисова Татьяна Игоревна</doctor_fio>
+    <conclusion>Варикозное расширение вен, компрессионный трикотаж.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Волков Ольга Сергеевна</patient_fio>
+    <address>г. Витебск, пр-т Независимости, д. 29, кв. 5</address>
+    <birth_date>1968-02-21</birth_date>
+    <appointment_date>2023-03-14</appointment_date>
+    <doctor_fio>Гришин Андрей Владимирович</doctor_fio>
+    <conclusion>Гастрит, назначена диета и обследование.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Зайцев Виктория Сергеевна</patient_fio>
+    <address>г. Витебск, ул. Козлова, д. 107, кв. 57</address>
+    <birth_date>1975-01-09</birth_date>
+    <appointment_date>2025-12-08</appointment_date>
+    <doctor_fio>Гришин Андрей Владимирович</doctor_fio>
+    <conclusion>ОРВИ, назначено симптоматическое лечение.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Белый Наталья Дмитриевна</patient_fio>
+    <address>г. Брест, ул. Якуба Коласа, д. 8, кв. 189</address>
+    <birth_date>1966-04-11</birth_date>
+    <appointment_date>2024-03-10</appointment_date>
+    <doctor_fio>Смирнова Елена Викторовна</doctor_fio>
+    <conclusion>Остеохондроз, физиотерапия и ЛФК.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Сидоров Дмитрий Александровна</patient_fio>
+    <address>г. Витебск, пр-т Дзержинского, д. 96, кв. 41</address>
+    <birth_date>2005-09-06</birth_date>
+    <appointment_date>2024-05-31</appointment_date>
+    <doctor_fio>Ковалёв Пётр Анатольевич</doctor_fio>
+    <conclusion>ОРВИ, назначено симптоматическое лечение.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Крылов Александр Иванович</patient_fio>
+    <address>г. Минск, ул. Бобруйская, д. 22, кв. 200</address>
+    <birth_date>1988-11-28</birth_date>
+    <appointment_date>2024-02-15</appointment_date>
+    <doctor_fio>Лисова Татьяна Игоревна</doctor_fio>
+    <conclusion>Гипертония I ст., рекомендован контроль АД.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Волков Ольга Сергеевна</patient_fio>
+    <address>г. Витебск, ул. Притыцкого, д. 64, кв. 27</address>
+    <birth_date>1981-07-24</birth_date>
+    <appointment_date>2025-10-29</appointment_date>
+    <doctor_fio>Баранов Олег Станиславович</doctor_fio>
+    <conclusion>ОРВИ, назначено симптоматическое лечение.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Попов Ольга Сергеевна</patient_fio>
+    <address>г. Гомель, пр-т Дзержинского, д. 3, кв. 41</address>
+    <birth_date>1984-05-27</birth_date>
+    <appointment_date>2023-10-04</appointment_date>
+    <doctor_fio>Лисова Татьяна Игоревна</doctor_fio>
+    <conclusion>Сахарный диабет 2 типа, коррекция питания.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Волков Артём Дмитриевич</patient_fio>
+    <address>г. Брест, ул. Якуба Коласа, д. 120, кв. 141</address>
+    <birth_date>2002-12-08</birth_date>
+    <appointment_date>2025-09-19</appointment_date>
+    <doctor_fio>Федорова Нина Петровна</doctor_fio>
+    <conclusion>Аллергический ринит, антигистаминные препараты.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Сидоров Виктория Александрович</patient_fio>
+    <address>г. Гомель, ул. Ленина, д. 18, кв. 44</address>
+    <birth_date>2003-04-15</birth_date>
+    <appointment_date>2024-03-12</appointment_date>
+    <doctor_fio>Лисова Татьяна Игоревна</doctor_fio>
+    <conclusion>Бронхит, ингаляции и отхаркивающие средства.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Громов Артём Дмитриевна</patient_fio>
+    <address>г. Брест, ул. Каховская, д. 44, кв. 30</address>
+    <birth_date>1976-02-06</birth_date>
+    <appointment_date>2025-09-28</appointment_date>
+    <doctor_fio>Ковалёв Пётр Анатольевич</doctor_fio>
+    <conclusion>Анемия лёгкой степени, препараты железа.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Крылов Дмитрий Дмитриевна</patient_fio>
+    <address>г. Витебск, пр-т Независимости, д. 53, кв. 19</address>
+    <birth_date>1968-03-20</birth_date>
+    <appointment_date>2023-09-14</appointment_date>
+    <doctor_fio>Лисова Татьяна Игоревна</doctor_fio>
+    <conclusion>Гипертония I ст., рекомендован контроль АД.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Белый Дмитрий Иванович</patient_fio>
+    <address>г. Брест, ул. Ленина, д. 35, кв. 94</address>
+    <birth_date>2005-08-21</birth_date>
+    <appointment_date>2025-12-30</appointment_date>
+    <doctor_fio>Смирнова Елена Викторовна</doctor_fio>
+    <conclusion>Мигрень, профилактика и обезболивание.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Лебедев Дмитрий Александрович</patient_fio>
+    <address>г. Минск, пр-т Дзержинского, д. 2, кв. 158</address>
+    <birth_date>1963-03-24</birth_date>
+    <appointment_date>2025-04-26</appointment_date>
+    <doctor_fio>Смирнова Елена Викторовна</doctor_fio>
+    <conclusion>ОРВИ, назначено симптоматическое лечение.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Волков Иван Сергеевна</patient_fio>
+    <address>г. Гомель, ул. Сурганова, д. 15, кв. 116</address>
+    <birth_date>1976-08-28</birth_date>
+    <appointment_date>2023-11-22</appointment_date>
+    <doctor_fio>Гришин Андрей Владимирович</doctor_fio>
+    <conclusion>Гипертония I ст., рекомендован контроль АД.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Черный Анна Александровна</patient_fio>
+    <address>г. Витебск, ул. Козлова, д. 33, кв. 183</address>
+    <birth_date>1983-03-19</birth_date>
+    <appointment_date>2023-07-25</appointment_date>
+    <doctor_fio>Ковалёв Пётр Анатольевич</doctor_fio>
+    <conclusion>Бронхит, ингаляции и отхаркивающие средства.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Петров Александр Александрович</patient_fio>
+    <address>г. Брест, пр-т Дзержинского, д. 93, кв. 153</address>
+    <birth_date>1995-05-11</birth_date>
+    <appointment_date>2025-03-12</appointment_date>
+    <doctor_fio>Лисова Татьяна Игоревна</doctor_fio>
+    <conclusion>Сахарный диабет 2 типа, коррекция питания.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Сидоров Дмитрий Дмитриевна</patient_fio>
+    <address>г. Гомель, ул. Бобруйская, д. 15, кв. 65</address>
+    <birth_date>2010-06-05</birth_date>
+    <appointment_date>2025-08-18</appointment_date>
+    <doctor_fio>Гришин Андрей Владимирович</doctor_fio>
+    <conclusion>Бронхит, ингаляции и отхаркивающие средства.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Лебедев Максим Иванович</patient_fio>
+    <address>г. Брест, пр-т Дзержинского, д. 26, кв. 64</address>
+    <birth_date>1962-04-20</birth_date>
+    <appointment_date>2024-07-29</appointment_date>
+    <doctor_fio>Смирнова Елена Викторовна</doctor_fio>
+    <conclusion>Мигрень, профилактика и обезболивание.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Сидоров Наталья Дмитриевна</patient_fio>
+    <address>г. Минск, ул. Притыцкого, д. 50, кв. 79</address>
+    <birth_date>1984-05-11</birth_date>
+    <appointment_date>2024-01-18</appointment_date>
+    <doctor_fio>Лисова Татьяна Игоревна</doctor_fio>
+    <conclusion>Анемия лёгкой степени, препараты железа.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Кузнецов Иван Дмитриевна</patient_fio>
+    <address>г. Минск, ул. Ленина, д. 70, кв. 157</address>
+    <birth_date>1976-12-27</birth_date>
+    <appointment_date>2024-03-26</appointment_date>
+    <doctor_fio>Смирнова Елена Викторовна</doctor_fio>
+    <conclusion>Аллергический ринит, антигистаминные препараты.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Белый Дмитрий Александровна</patient_fio>
+    <address>г. Минск, ул. Козлова, д. 112, кв. 19</address>
+    <birth_date>1956-12-05</birth_date>
+    <appointment_date>2023-01-21</appointment_date>
+    <doctor_fio>Лисова Татьяна Игоревна</doctor_fio>
+    <conclusion>Бронхит, ингаляции и отхаркивающие средства.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Медведев Мария Сергеевич</patient_fio>
+    <address>г. Брест, ул. Ленина, д. 65, кв. 200</address>
+    <birth_date>1961-12-01</birth_date>
+    <appointment_date>2025-11-08</appointment_date>
+    <doctor_fio>Гришин Андрей Владимирович</doctor_fio>
+    <conclusion>Гастрит, назначена диета и обследование.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Морозов Максим Сергеевич</patient_fio>
+    <address>г. Брест, ул. Каховская, д. 40, кв. 28</address>
+    <birth_date>1966-05-01</birth_date>
+    <appointment_date>2024-02-28</appointment_date>
+    <doctor_fio>Ковалёв Пётр Анатольевич</doctor_fio>
+    <conclusion>Варикозное расширение вен, компрессионный трикотаж.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Петров Никита Иванович</patient_fio>
+    <address>г. Гомель, ул. Сурганова, д. 39, кв. 111</address>
+    <birth_date>1959-05-11</birth_date>
+    <appointment_date>2024-05-21</appointment_date>
+    <doctor_fio>Лисова Татьяна Игоревна</doctor_fio>
+    <conclusion>Гипертония I ст., рекомендован контроль АД.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Зайцев Анна Александровна</patient_fio>
+    <address>г. Витебск, ул. Козлова, д. 57, кв. 138</address>
+    <birth_date>1955-12-23</birth_date>
+    <appointment_date>2025-03-21</appointment_date>
+    <doctor_fio>Лисова Татьяна Игоревна</doctor_fio>
+    <conclusion>Гастрит, назначена диета и обследование.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Лебедев Мария Александрович</patient_fio>
+    <address>г. Минск, ул. Якуба Коласа, д. 74, кв. 5</address>
+    <birth_date>1986-11-04</birth_date>
+    <appointment_date>2023-10-11</appointment_date>
+    <doctor_fio>Федорова Нина Петровна</doctor_fio>
+    <conclusion>Гастрит, назначена диета и обследование.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Новиков Артём Александровна</patient_fio>
+    <address>г. Гомель, ул. Якуба Коласа, д. 73, кв. 103</address>
+    <birth_date>2009-12-11</birth_date>
+    <appointment_date>2023-07-02</appointment_date>
+    <doctor_fio>Ковалёв Пётр Анатольевич</doctor_fio>
+    <conclusion>Мигрень, профилактика и обезболивание.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Иванов Максим Дмитриевна</patient_fio>
+    <address>г. Витебск, ул. Козлова, д. 115, кв. 167</address>
+    <birth_date>1975-04-02</birth_date>
+    <appointment_date>2024-05-03</appointment_date>
+    <doctor_fio>Лисова Татьяна Игоревна</doctor_fio>
+    <conclusion>Мигрень, профилактика и обезболивание.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Медведев Иван Сергеевна</patient_fio>
+    <address>г. Брест, ул. Каховская, д. 72, кв. 157</address>
+    <birth_date>1974-09-09</birth_date>
+    <appointment_date>2023-04-09</appointment_date>
+    <doctor_fio>Смирнова Елена Викторовна</doctor_fio>
+    <conclusion>Варикозное расширение вен, компрессионный трикотаж.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Орлов Максим Иванович</patient_fio>
+    <address>г. Брест, пр-т Дзержинского, д. 39, кв. 178</address>
+    <birth_date>2004-07-20</birth_date>
+    <appointment_date>2025-01-31</appointment_date>
+    <doctor_fio>Ковалёв Пётр Анатольевич</doctor_fio>
+    <conclusion>Мигрень, профилактика и обезболивание.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Сидоров Дмитрий Сергеевна</patient_fio>
+    <address>г. Витебск, ул. Сурганова, д. 20, кв. 65</address>
+    <birth_date>1974-07-10</birth_date>
+    <appointment_date>2023-04-17</appointment_date>
+    <doctor_fio>Баранов Олег Станиславович</doctor_fio>
+    <conclusion>Сахарный диабет 2 типа, коррекция питания.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Орлов Анна Сергеевич</patient_fio>
+    <address>г. Минск, ул. Козлова, д. 94, кв. 11</address>
+    <birth_date>1977-11-22</birth_date>
+    <appointment_date>2023-07-26</appointment_date>
+    <doctor_fio>Лисова Татьяна Игоревна</doctor_fio>
+    <conclusion>Гипертония I ст., рекомендован контроль АД.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Новиков Ольга Дмитриевич</patient_fio>
+    <address>г. Витебск, ул. Бобруйская, д. 109, кв. 62</address>
+    <birth_date>1993-11-02</birth_date>
+    <appointment_date>2025-03-24</appointment_date>
+    <doctor_fio>Ковалёв Пётр Анатольевич</doctor_fio>
+    <conclusion>Бронхит, ингаляции и отхаркивающие средства.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Зайцев Максим Ивановна</patient_fio>
+    <address>г. Витебск, ул. Притыцкого, д. 16, кв. 111</address>
+    <birth_date>1965-08-05</birth_date>
+    <appointment_date>2024-08-28</appointment_date>
+    <doctor_fio>Лисова Татьяна Игоревна</doctor_fio>
+    <conclusion>Аллергический ринит, антигистаминные препараты.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Белый Виктория Александрович</patient_fio>
+    <address>г. Минск, ул. Притыцкого, д. 68, кв. 113</address>
+    <birth_date>1957-10-06</birth_date>
+    <appointment_date>2024-05-11</appointment_date>
+    <doctor_fio>Лисова Татьяна Игоревна</doctor_fio>
+    <conclusion>Аллергический ринит, антигистаминные препараты.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Морозов Артём Сергеевич</patient_fio>
+    <address>г. Брест, ул. Козлова, д. 26, кв. 70</address>
+    <birth_date>2007-07-20</birth_date>
+    <appointment_date>2024-05-28</appointment_date>
+    <doctor_fio>Гришин Андрей Владимирович</doctor_fio>
+    <conclusion>Мигрень, профилактика и обезболивание.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Морозов Елена Дмитриевна</patient_fio>
+    <address>г. Гомель, ул. Бобруйская, д. 54, кв. 32</address>
+    <birth_date>2006-03-09</birth_date>
+    <appointment_date>2025-02-23</appointment_date>
+    <doctor_fio>Ковалёв Пётр Анатольевич</doctor_fio>
+    <conclusion>Остеохондроз, физиотерапия и ЛФК.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Козлов Александр Дмитриевич</patient_fio>
+    <address>г. Гомель, пр-т Независимости, д. 70, кв. 76</address>
+    <birth_date>1961-09-29</birth_date>
+    <appointment_date>2025-10-21</appointment_date>
+    <doctor_fio>Лисова Татьяна Игоревна</doctor_fio>
+    <conclusion>Анемия лёгкой степени, препараты железа.</conclusion>
+  </patient>
+  <patient>
+    <patient_fio>Кузнецов Анна Дмитриевна</patient_fio>
+    <address>г. Минск, ул. Козлова, д. 42, кв. 1</address>
+    <birth_date>1994-09-06</birth_date>
+    <appointment_date>2025-07-09</appointment_date>
+    <doctor_fio>Лисова Татьяна Игоревна</doctor_fio>
+    <conclusion>Остеохондроз, физиотерапия и ЛФК.</conclusion>
+  </patient>
+</patients>

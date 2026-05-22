@@ -1,0 +1,29 @@
+# Virtual environment
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*~
+
+# Local databases (runtime)
+data/patients.db
+data/test.db
+data/test_out.xml
+
+# OS
+.DS_Store
+Thumbs.db
